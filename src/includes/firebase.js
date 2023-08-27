@@ -16,5 +16,9 @@ firebase.initializeApp(firebaseConfig)
 const auth = firebase.auth()
 const db = firebase.firestore()
 const storage = firebase.storage()
+// access to user in firestore db
 const usersCollection = db.collection('users')
-export { auth, db, usersCollection, storage }
+// access to songs in firestore db
+const songsCollection = db.collection('songs')
+
+export { auth, db, usersCollection, songsCollection, storage }
