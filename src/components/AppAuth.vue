@@ -33,8 +33,8 @@
                 href="#"
                 @click.prevent="tab = 'login'"
                 :class="{
-                  'hover:text-white text-white bg-blue-600': tab === 'login',
-                  'hover:text-blue-600': tab === 'register'
+                  'hover:text-white text-white bg-slate-800': tab === 'login',
+                  'hover:text-slate-600': tab === 'register'
                 }"
                 >Login</a
               >
@@ -44,8 +44,8 @@
                 class="block rounded py-3 px-4 transition"
                 href="#"
                 :class="{
-                  'hover:text-white text-white bg-blue-600': tab === 'register',
-                  'hover:text-blue-600': tab === 'login'
+                  'hover:text-white text-white bg-slate-800': tab === 'register',
+                  'hover:text-slate-600': tab === 'login'
                 }"
                 @click.prevent="tab = 'register'"
                 >Register</a

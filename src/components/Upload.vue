@@ -58,6 +58,17 @@ export default {
         if (file.type !== 'audio/mpeg') {
           return
         }
+        if (!navigator.onLine) {
+          this.uploals.push({
+            task: {},
+            current_progress: 100,
+            name: file.name,
+            variant: 'bg-red-400',
+            icon: 'fas fa-times',
+            text_class: 'text-red-400'
+          })
+          return
+        }
         // storageBucket =  {music-fd17e.appspot.com}
         const storageRef = storage.ref() //storage address is looklike ---> music-fd17e.appspot.com
         const songRef = storageRef.child(`songs/${file.name}`) //storage address is looklike --->  music-fd17e.appspot.com/songs/example.mp3

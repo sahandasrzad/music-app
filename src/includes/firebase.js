@@ -16,9 +16,14 @@ firebase.initializeApp(firebaseConfig)
 const auth = firebase.auth()
 const db = firebase.firestore()
 const storage = firebase.storage()
-// access to user in firestore db
+db.enablePersistence().catch((error) => {
+  console.log(`firebase persistence error ${error.code}`)
+})
+//  user in firestore db
 const usersCollection = db.collection('users')
-// access to songs in firestore db
+//  songs in firestore db
 const songsCollection = db.collection('songs')
+//  comments in firestore db
+const commentsCollection = db.collection('comments')
 
-export { auth, db, usersCollection, songsCollection, storage }
+export { auth, db, usersCollection, songsCollection, commentsCollection, storage }

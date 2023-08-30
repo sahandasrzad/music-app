@@ -1,13 +1,10 @@
 <template>
   <!-- Header -->
-  <header id="header" class="bg-gray-700">
+  <header id="header" class="bg-slate-900">
     <nav class="container mx-auto flex justify-start items-center py-5 px-4">
       <!-- App Name -->
-      <router-link
-        class="text-white font-bold uppercase text-2xl mr-4"
-        to="/"
-        exact-active-class="no-active"
-        >Music</router-link
+      <router-link class="text-white mr-4 mt-1" to="/" exact-active-class="no-active"
+        >Home</router-link
       >
 
       <div class="flex flex-grow items-center">
@@ -29,6 +26,11 @@
             </li>
           </template>
         </ul>
+        <ul class="ml-auto">
+          <a href="#" class="px-2 text-white" @click.prevent="changeLocale">
+            {{ currentLocale }}
+          </a>
+        </ul>
       </div>
     </nav>
   </header>
@@ -41,7 +43,10 @@ export default {
   name: 'AppHeader',
   computed: {
     ...mapStores(userModalStore, useUserStore),
-    ...mapWritableState(userModalStore, ['isOpen'])
+    ...mapWritableState(userModalStore, ['isOpen']),
+    currentLocale() {
+      return this.$i18n.locale === 'fa' ? 'persian' : 'english'
+    }
   },
   methods: {
     toggleAuthModal() {
@@ -53,6 +58,9 @@ export default {
       if (this.$route.meta.requiresAuth) {
         this.$router.push({ name: 'home' })
       }
+    },
+    changeLocale() {
+      this.$i18n.locale = this.$i18n.locale === 'fa' ? 'en' : 'fa'
     }
   }
 }
