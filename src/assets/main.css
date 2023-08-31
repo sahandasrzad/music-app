@@ -1,7 +1,9 @@
 a {
   transition: all 0.15s ease;
 }
-
+body {
+  font-family: Yekan, sans-serif !important;
+}
 /* text-yellow-500 */
 a:hover {
   color: #f59e0b;
@@ -36,7 +38,7 @@ a:hover {
   border-style: solid;
 }
 
-input[type="file"] {
+input[type='file'] {
   margin-top: 20px;
 }
 

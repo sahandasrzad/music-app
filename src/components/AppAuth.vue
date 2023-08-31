@@ -18,7 +18,7 @@
         <div class="py-4 text-left px-6">
           <!--Title-->
           <div class="flex justify-between items-center pb-4">
-            <p class="text-2xl font-bold">Your Account</p>
+            <p class="text-2xl font-bold">{{ $t('auth_form.title') }}</p>
             <!-- Modal Close Button -->
             <div class="modal-close cursor-pointer z-50" @click="modalVisibility = false">
               <i class="fas fa-times"></i>
@@ -36,7 +36,8 @@
                   'hover:text-white text-white bg-slate-800': tab === 'login',
                   'hover:text-slate-600': tab === 'register'
                 }"
-                >Login</a
+              >
+                {{ $t('auth_form.btn_login') }}</a
               >
             </li>
             <li class="flex-auto text-center">
@@ -48,7 +49,8 @@
                   'hover:text-slate-600': tab === 'login'
                 }"
                 @click.prevent="tab = 'register'"
-                >Register</a
+              >
+                {{ $t('auth_form.btn_register') }}</a
               >
             </li>
           </ul>

@@ -1,5 +1,41 @@
 {
   "home": {
-    "listen": "به موزیک عالی گوش بدید"
+    "listen": "به موزیک عالی گوش بدید",
+    "listen_description": "اولین آهنگ خود را آپلود کنید و سفر خود را آغاز کنید. برنامه موسیقی به شما فضایی برای ایجاد، پیدا کردن طرفداران خود و ارتباط با هنرمندان دیگر می دهد.",
+    "songs": "موزیک ها"
+  },
+  "register_form": {
+    "name": "نام",
+    "name_place": " نام را وارد کنید",
+    "email": "ایمیل",
+    "email_place": " ایمیل را وارد کنید",
+    "age": "سن",
+    "age_place": " سن را وارد کنید",
+    "password": "رمزعبور",
+    "password_place": " رمزعبور را وارد کنید",
+    "co_password": "تکرار رمزعبور",
+    "co_password_place": " تکرار رمزعبور را وارد کنید",
+    "country": "کشور",
+    "term": "پذیرفتن قوانین سرویس",
+    "btn": "ثبت نام"
+  },
+  "login_form": {
+    "email": "ایمیل",
+    "email_place": " ایمیل را وارد کنید",
+    "password": "رمزعبور",
+    "password_place": " رمزعبور را وارد کنید",
+    "btn": "ورود"
+  },
+  "auth_form": {
+    "title": "حساب کاربری ",
+    "btn_login": "ورود",
+    "btn_register": "ثبت نام"
+  },
+  "app_header": {
+    "menu_item_home": "خانه",
+    "menu_item_about": "درباره",
+    "menu_item_register": "ورود / ثبت نام",
+    "menu_item_manage": "مدیریت",
+    "menu_item_logout": "خروج"
   }
 }

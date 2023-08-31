@@ -11,23 +11,23 @@
     </div>
     <!-- Email -->
     <div class="mb-3">
-      <label class="inline-block mb-2">Email</label>
+      <label class="inline-block mb-2">{{ $t('login_form.email') }}</label>
       <vee-field
         name="email"
         type="email"
         class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition duration-500 focus:outline-none focus:border-black rounded"
-        placeholder="Enter Email"
+        :placeholder="$t('login_form.email_place')"
       />
       <ErrorMessage class="text-red-600" name="email" />
     </div>
     <!-- Password -->
     <div class="mb-3">
-      <label class="inline-block mb-2">Password</label>
+      <label class="inline-block mb-2">{{ $t('login_form.password') }}</label>
       <vee-field
         name="password"
         type="password"
         class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition duration-500 focus:outline-none focus:border-black rounded"
-        placeholder="Password"
+        :placeholder="$t('login_form.password_place')"
       />
       <ErrorMessage class="text-red-600" name="password" />
     </div>
@@ -36,7 +36,7 @@
       type="submit"
       class="block w-full bg-slate-800 text-white py-1.5 px-3 rounded transition hover:bg-slate-900"
     >
-      Submit
+      {{ $t('login_form.btn') }}
     </button>
   </vee-form>
 </template>

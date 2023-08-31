@@ -3,34 +3,40 @@
   <header id="header" class="bg-slate-900">
     <nav class="container mx-auto flex justify-start items-center py-5 px-4">
       <!-- App Name -->
-      <router-link class="text-white mr-4 mt-1" to="/" exact-active-class="no-active"
-        >Home</router-link
-      >
+      <router-link class="text-white mr-4 mt-1" to="/" exact-active-class="no-active">{{
+        $t('app_header.menu_item_home')
+      }}</router-link>
 
       <div class="flex flex-grow items-center">
         <!-- Primary Navigation -->
         <ul class="flex flex-row mt-1">
           <!-- Navigation Links -->
-          <router-link class="px-2 text-white" to="/about">About</router-link>
+          <router-link class="px-2 text-white" to="/about">{{
+            $t('app_header.menu_item_about')
+          }}</router-link>
           <li v-if="!userStore.userLoggedIn">
-            <a class="px-2 text-white" href="#" @click.prevent="toggleAuthModal"
-              >Login / Register</a
-            >
+            <a class="px-2 text-white" href="#" @click.prevent="toggleAuthModal">{{
+              $t('app_header.menu_item_register')
+            }}</a>
           </li>
           <template v-else>
             <li>
-              <router-link class="px-2 text-white" to="/manage">Manage</router-link>
+              <router-link class="px-2 text-white" to="/manage">{{
+                $t('app_header.menu_item_manage')
+              }}</router-link>
             </li>
             <li>
-              <a class="px-2 text-white" href="#" @click.prevent="signOut">logout</a>
+              <a class="px-2 text-white" href="#" @click.prevent="signOut">{{
+                $t('app_header.menu_item_logout')
+              }}</a>
             </li>
           </template>
         </ul>
-        <ul class="ml-auto">
+        <!-- <ul class="ml-auto">
           <a href="#" class="px-2 text-white" @click.prevent="changeLocale">
             {{ currentLocale }}
           </a>
-        </ul>
+        </ul> -->
       </div>
     </nav>
   </header>

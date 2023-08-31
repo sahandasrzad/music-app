@@ -4,6 +4,7 @@ import fa from '@/locales/fa.json'
 export default createI18n({
   locale: 'en',
   fallbackLocale: 'en',
+  legacy: true,
   messages: {
     en,
     fa

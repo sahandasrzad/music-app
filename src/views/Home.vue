@@ -10,8 +10,7 @@
         <div class="text-white main-header-content">
           <h1 class="font-bold text-5xl mb-5">{{ $t('home.listen') }}</h1>
           <p class="w-full md:w-8/12 mx-auto">
-            Upload your first track and begin your journey. Music app gives you space to create,
-            find your fans, and connect with other artists.
+            {{ $t('home.listen_description') }}
           </p>
         </div>
       </div>
@@ -29,9 +28,7 @@
           class="px-6 pt-6 pb-5 font-bold border-b border-gray-200"
           v-icon.right.yellow="'headphones-alt'"
         >
-          <span class="card-title">Songs</span>
-          <!-- Icon -->
-          <!-- <i class="fa fa-headphones-alt float-right text-green-400 text-xl"></i> -->
+          {{ $t('home.songs') }}
         </div>
         <!-- Playlist -->
         <ol id="playlist">

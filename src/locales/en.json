@@ -1,6 +1,42 @@
 {
   "home": {
-    "listen": "Listen to Great Music!"
+    "listen": "Listen to Great Music!",
+    "listen_description": "Upload your first track and begin your journey. Music app gives you space to create, find your fans, and connect with other artists.",
+    "songs": "songs"
+  },
+  "app_header": {
+    "menu_item_home": "home",
+    "menu_item_about": "about",
+    "menu_item_register": "login / register",
+    "menu_item_manage": "manage",
+    "menu_item_logout": "logouot"
+  },
+  "register_form": {
+    "name": "name",
+    "name_place": "Enter name  ",
+    "email": "email",
+    "email_place": "Enter email  ",
+    "age": "age",
+    "age_place": "Enter age  ",
+    "password": "password",
+    "password_place": "Enter password  ",
+    "co_password": "confirm password",
+    "co_password_place": "Enter confirm password  ",
+    "country": "country",
+    "term": "accept terms of service",
+    "btn": "submit"
+  },
+  "login_form": {
+    "email": "email",
+    "email_place": "Enter email  ",
+    "password": "password",
+    "password_place": "Enter password  ",
+    "btn": "submit"
+  },
+  "auth_form": {
+    "title": "Your Account",
+    "btn_login": "login",
+    "btn_register": "register"
   },
   "song": {
     "comment_count": "no commetns | 1 comment | {count} comments"

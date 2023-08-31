@@ -18,7 +18,7 @@
         <div
           class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-gray-900 sm:grid-cols-2 md:flex lg:gap-x-10"
         >
-          <a v-for="link in links" :key="link.name" :href="link.href"
+          <a v-for="link in links" :key="link.name" :href="link.href" target="_blank"
             >{{ link.name }} <span aria-hidden="true">&rarr;</span>
             <i class="text-xl fab ml-2" :class="link.icon"></i
           ></a>
@@ -31,9 +31,9 @@
 
 <script setup>
 const links = [
-  { name: 'github', href: '#', icon: 'fa-github' },
-  { name: 'linkedin', href: '#', icon: 'fa-linkedin' },
-  { name: 'telegram', href: '#', icon: 'fa-telegram' },
-  { name: 'instagram', href: '#', icon: 'fa-instagram' }
+  { name: 'github', href: 'https://github.com/sahandasrzad', icon: 'fa-github' },
+  { name: 'linkedin', href: 'https://www.linkedin.com/in/sahand-asrzad/', icon: 'fa-linkedin' },
+  { name: 'telegram', href: 'https://t.me/sahandasrzad', icon: 'fa-telegram' },
+  { name: 'instagram', href: 'https://www.instagram.com/sahand_asrzad', icon: 'fa-instagram' }
 ]
 </script>
